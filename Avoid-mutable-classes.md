@@ -1,0 +1,3 @@
+**Avoid** mutable classes
+
+TODO
