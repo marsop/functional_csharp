@@ -7,4 +7,4 @@ Check the [Wiki](https://github.com/marsop/functional_csharp/wiki).
 * [Incomplete states](https://github.com/marsop/functional_csharp/wiki/Avoid-representation-of-incomplete-states)
 
 
-[License|LICENSE.md]
+[License](LICENSE.md)
