@@ -39,5 +39,5 @@ This constructor is much better since using it, it would not be possible to crea
 
 ## See also
 
-* (Immutability)[Avoid-mutable-classes.md]
-* [[Validity|Do validate in constructor]]
+* [Immutability](Avoid-mutable-classes.md)
+* [Validity](Do-validate-in-constructor.md)
