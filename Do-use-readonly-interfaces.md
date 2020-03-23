@@ -23,7 +23,7 @@ father.Kids.Add(father);
 
 ```chsarp
 public interface IPerson {
-   IReadOnlyEnumerable<IPerson> Kids { get; }
+   IReadOnlyList<IPerson> Kids { get; }
 }
 ```
 
