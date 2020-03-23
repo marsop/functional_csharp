@@ -7,7 +7,13 @@ The method signature should always use the most specific type possible when retu
 ## Bad example
 
 ```csharp
-public List<Person> GetPeople(List<School> schools) {..}
+public List<Person> GetPeople(object schools) {
+  var schoolList = (List<School>)schools;
+  
+  //..
+  
+  return people;
+}
 ```
 
 ## Good example
