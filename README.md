@@ -5,6 +5,8 @@ Check the [Wiki](https://github.com/marsop/functional_csharp/wiki).
 
 * [Readonly interfaces](Do-use-readonly-interfaces.md)
 * [Incomplete states](Avoid-representation-of-incomplete-states.md)
+* [Immutable Types](Consider-immutable-types.md)
+* [Immutable Classes](Avoid-mutable-classes.md)
 
 
 [License](LICENSE)
