@@ -1,17 +1,28 @@
-# Avoid mutable collections
+# Avoid mutable classes
 
 ## Rationale
 
-Returning mutable collections allows the client to modify the output of one operation, reducing traceability and making it harder to reason abou the contents of variables in the application.
+Allowing the client to modify the internals of a class breaks encapsulation. Use methods to modify internal state and use `private` setters by default.
 
 ## Bad example
 
 ```csharp
-public List<T> DoSomething() {..}
+public class Person {
+  public string Name {get; set;}
+}
 ```
 
 ## Good example
 
 ```csharp
-public IReadOnlyList<T> DoSomething() {..}
+public class Person {
+  public string Name {get; private set;}
+  
+  public void ChangeName(string name) {
+    // perform validation on input string
+    // ...
+    
+    Name = name;
+  }
+}
 ```
