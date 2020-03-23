@@ -6,8 +6,12 @@ Returning mutable collections allows the client to modify the output of one oper
 
 ## Bad example
 
-`public List<T> DoSomething() {..}`
+```csharp
+public List<T> DoSomething() {..}
+```
 
 ## Good example
 
-`public IReadOnlyList<T> DoSomething() {..}`
+```csharp
+public IReadOnlyList<T> DoSomething() {..}
+```
