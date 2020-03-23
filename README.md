@@ -7,6 +7,7 @@ Check the [Wiki](https://github.com/marsop/functional_csharp/wiki).
 * [Incomplete states](Avoid-representation-of-incomplete-states.md)
 * [Immutable Collection Types](consider-immutable-types.md)
 * [Immutable Classes](Avoid-mutable-classes.md)
+* [Robustness principle](https://en.wikipedia.org/wiki/Robustness_principle)
 
 
 [License](LICENSE)
