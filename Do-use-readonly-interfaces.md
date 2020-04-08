@@ -4,7 +4,7 @@
 
 Allowing external callers to change the state of the class is an anti-pattern because it breaks the encapsulation and should be avoided.
 
-## Bad example
+## Don't
 
 ```chsarp
 public interface IPerson {
@@ -19,7 +19,7 @@ IPerson father = ...
 father.Kids.Add(father);
 ```
 
-## Good Example
+## Do
 
 ```chsarp
 public interface IPerson {
