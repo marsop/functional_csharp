@@ -8,12 +8,14 @@ Instead use operations acting on single items and map those by using Linq
 
 ```csharp
 
-public IEnumerable<OutType> MapInput(IEnumerable<InType> ins) {
-  foreach (var input in ins) {
+public IEnumerable<OutType> MapInputs(IEnumerable<InType> inputs) {
+  foreach (var input in inputs) {
     var output = // do something with input
     yield output
   }
 }
+
+var outputs = MapInputs(inputs);
 
 ```
 
@@ -25,5 +27,5 @@ public OutType MapInput(InType input) {
   return output;
 }
 
-ins.Select(MapInput);
+var outputs = inputs.Select(MapInput);
 ```
