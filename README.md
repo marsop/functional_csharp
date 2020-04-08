@@ -9,7 +9,7 @@ Check the [Wiki](https://github.com/marsop/functional_csharp/wiki).
 * [Immutable Classes](Avoid-mutable-classes.md)
 * [No downcasting](Avoid-downcasting.md)
 * [Robustness principle](https://en.wikipedia.org/wiki/Robustness_principle)
-* [Avoid projections over entire collections](Avoid-projections-of-enumerables.md)
+* [Avoid projections over entire collections](avoid-projections-of-enumerables.md)
 
 
 [License](LICENSE)
