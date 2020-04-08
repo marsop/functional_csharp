@@ -25,9 +25,16 @@ father.Kids.Add(father);
 public interface IPerson {
    IReadOnlyList<IPerson> Kids { get; }
 }
+
+public class Citizen : IPerson {
+   private List<IPerson> _kids = new List<IPerson>();
+
+   public IReadOnlyList<IPerson> Kids => _kids;
+}
+
 ```
 
-Here, the class implementing `IPerson` (let's call this class `Citizen`) does expose a collection that can be read, but not modified by any external class. 
+Here, the class `Citizen` implementing `IPerson`does expose a collection that can be read, but not modified by any external class. 
 
 ## Links
 
