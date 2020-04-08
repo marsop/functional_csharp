@@ -6,7 +6,7 @@ Allowing external callers to change the state of the class is an anti-pattern be
 
 ## Don't
 
-```chsarp
+```csharp
 public interface IPerson {
    IList<IPerson> Kids { get; }
 }
@@ -21,7 +21,7 @@ father.Kids.Add(father);
 
 ## Do
 
-```chsarp
+```csharp
 public interface IPerson {
    IReadOnlyList<IPerson> Kids { get; }
 }
