@@ -2,7 +2,7 @@
 
 When creating objects, avoid giving the option to instantiate an object without all relevant information. If absolutely necessary it is ok to allow the change in some fields as long as the state of the object instance remains valid.
 
-## Bad example
+## Don't
 
 ```csharp
 
@@ -21,7 +21,7 @@ Person programmer = new Person();
 programmer.Name = "Alberto";
 ```
 
-## Good Example
+## Do
 
 ```csharp
 
