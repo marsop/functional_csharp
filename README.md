@@ -1,5 +1,6 @@
-# functional_csharp
-Collection of Best Practices for more functional C# Applications
+# Functional C# 
+
+Collection of Best Practices for more functional C# 8+ Applications
 
 * [Do use Readonly collections](Do-use-readonly-interfaces.md)
 * [Avoid incomplete states](Avoid-representation-of-incomplete-states.md)
