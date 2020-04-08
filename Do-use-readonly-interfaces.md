@@ -2,7 +2,7 @@
 
 ## Rationale
 
-Allowing external callers to change the state of the class is an anti-pattern because it breaks the encapsulation and should be avoided.
+Allowing external callers to change the state of the class where the collection is stored is an anti-pattern because it breaks the encapsulation. Strive to provide functions that do not modify the collections, but instead create copies of them. Use mutable collections sparingly.
 
 ## Don't
 
