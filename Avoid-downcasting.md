@@ -4,20 +4,25 @@
 
 The method signature should always use the most specific type possible when returning and the less specific type possible when accepting parameters. This does not mean to use types that do not represent the structure that we need for the operation. Strive to provide explicit signatures that allow for a clear transmission of requirements while still allowing for different types.
 
-## Bad example
+## Don't
 
 ```csharp
-public List<Person> GetPeople(object schools) {
-  var schoolList = (List<School>)schools;
+public List<Person> GetPeople(object oSchool) {
+  var school = (School)oSchool;
   
-  //..
+  // ..
   
   return people;
 }
 ```
 
-## Good example
+## Do
 
 ```csharp
-public IReadOnlyList<Person> GetPeople(IEnumerable<School> schools) {..}
+public IReadOnlyList<Person> GetPeople(School school) {
+
+  // ..
+  
+  return people;
+}
 ```
