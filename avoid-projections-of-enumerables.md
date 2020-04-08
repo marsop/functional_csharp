@@ -2,6 +2,10 @@
 
 Instead use operations acting on single items and map those by using Linq
 
+# Rationale
+
+Leverage Linq to write more concise operations. This reduces the amount of code required and improves readability of the codebase.
+
 # Example
 
 ## Don't
