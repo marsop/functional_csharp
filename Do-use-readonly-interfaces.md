@@ -1,4 +1,4 @@
-**Avoid** exposing any kind of mutable collection in interface properties. Instead, use [IReadOnlyCollection\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1?view=netcore-3.0), [IReadOnlyList\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1?view=netcore-3.0) and [IReadOnlyDictionary\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=netcore-3.0) in order to expose the elements of the collection.
+**Avoid** exposing any type of mutable collection in interface properties. Instead, use [IReadOnlyCollection\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1?view=netcore-3.0), [IReadOnlyList\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1?view=netcore-3.0) and [IReadOnlyDictionary\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=netcore-3.0) in order to expose the elements of the collection and then use methods in the owner class to manipulate its contents.
 
 ## Rationale
 
